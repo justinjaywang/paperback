@@ -1,10 +1,8 @@
 # Paperback
 
-## Motivation
-
 ![Paperback screenshot](paperback-screenshot.png)
 
-Paperback is a theme for Wintersmith inspired by the typography of printed novels, and informed by blog posts written by [Information Architexts](http://informationarchitects.net/blog/responsive-typography-the-basics/), among others.
+Paperback is a theme for Wintersmith inspired by the typography of printed novels, and informed by blog posts written by [Information Architects](http://informationarchitects.net/blog/responsive-typography-the-basics/), among others.
 
 ## Features
 
