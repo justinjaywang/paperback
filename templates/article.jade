@@ -1,0 +1,12 @@
+extends layout
+
+block prepend title
+  | #{ page.title } &ndash; 
+
+block content
+  include mixins
+  article.post
+    mixin date(page.date)
+    h1.post-title= page.title
+    mixin author(page.metadata.author)
+    section.content!= page.html

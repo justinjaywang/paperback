@@ -1,0 +1,266 @@
+// VARIABLES
+
+// mixins
+make-small-caps()
+  font-family $serif-alt
+  text-transform lowercase
+
+// colors
+$whiteish = #F6F5F2
+$whiteishgray = #E6E5E2
+$blackish = #444
+$red = #f55
+$gray = #aaa
+
+// fonts
+$serif = 'Alegreya', georgia, serif
+$serif-alt = 'Alegreya SC', georgia, serif
+$sans = 'Open Sans', sans-serif
+$mono = menlo, consolas, monospace
+
+// font-size
+$font-size-large = 118% // ideal measure of ~64 characters
+$font-size-small = 100%
+
+// container sizes
+$container-width-large = 680px
+$container-width-small = 480px
+
+// sizes based on 3:5 stranded scale
+$sn3 = 0.4615
+$sn2 = 0.6154
+$sn1 = 0.7692
+$s0 = 1.0
+$s1 = 1.2308
+$s2 = 1.6154
+$s3 = 2.0
+$s4 = 2.6154
+$s5 = 3.2308
+$s6 = 4.2308
+$s7 = 5.2308
+$s8 = 6.8462
+$s9 = 8.4616
+
+// BASE STYLES
+
+// framework
+*
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  -o-box-sizing border-box
+  box-sizing border-box
+
+html
+  font-size $font-size-large
+  -webkit-text-size-adjust $font-size-large
+  -ms-text-size-adjust $font-size-large
+
+body
+  margin 0
+  padding 0
+  height 100%
+  width 100%
+  text-rendering optimizeLegibility
+  font-family $serif
+  font-size $s1 rem
+  line-height $s3 rem
+  font-weight 400
+  color $blackish
+  background $whiteish
+
+.container
+  max-width $container-width-large
+  margin 0 auto
+  padding 0
+  word-break hyphenate
+  word-wrap break-word
+
+// links and typography
+a
+  color $blackish
+  &:hover
+    color $red
+
+p, ul, ol, pre
+  margin-bottom $s0 rem
+
+h1, h2, h3, h4, h5, h6
+  font-weight normal
+  font-style italic
+  text-align center
+  margin ($s1 rem) 0
+  line-height $s4 rem
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color $blackish
+      text-decoration underline
+
+h1
+  font-size ($s4 rem)
+
+h2
+  font-size ($s3 rem)
+
+h3
+  font-size ($s2 rem)
+
+h4, h5, h6
+  font-size ($s1 rem)
+
+blockquote, ol, ul
+  margin 0
+  padding-left ($s5 rem)
+
+blockquote
+  padding-right ($s5 rem)
+
+ul
+  list-style-type square
+
+ol
+  list-style-type decimal
+
+// code
+pre
+  padding 0.8em
+  background $whiteishdarker
+  white-space pre-wrap
+  white-space -moz-pre-wrap
+  white-space -pre-wrap
+  white-space -o-pre-wrap
+  word-wrap break-word
+  line-height 1.5em
+
+code
+  font-family $mono
+  font-size ($sn1 em)
+  color $blackish
+
+// images
+img
+  margin 0 auto
+  display block
+  max-width 100%
+
+// SECTION STYLES
+
+// header and footer
+header, footer
+  text-align center
+
+header
+  margin ($s6 rem) 0
+
+.blog-title
+  color $red
+  font-family $sans
+  text-transform uppercase
+  text-decoration none
+  letter-spacing 0.12em
+  text-align center
+
+footer
+  make-small-caps()
+
+footer ul, footer ul li
+  display inline
+  padding 0 ($sn3 rem)
+
+.footer-container
+  background $whiteishgray
+  padding ($s4 rem) 0
+  margin-top ($s8 rem)
+
+.copyright
+  color $gray
+  margin-top ($sn3 rem)
+
+// posts
+.post
+  margin 0
+  padding-bottom ($s5 rem)
+
+.post-title
+  margin-top ($s2 rem)
+  margin-bottom ($sn3 rem)
+
+.index-post-title
+  margin-top ($sn3 rem)
+
+// meta
+.date, .author, .more, .date a, .author a, .more a
+  make-small-caps()
+
+.date
+  text-align center
+  margin-bottom 0
+  color $gray
+
+.author
+  text-align center
+  margin-bottom ($s5 rem)
+  margin-top 0
+
+.by
+  font-family $serif
+  &:before
+    content 'By\00A0'
+    text-transform none
+
+.intro-content, .intro-content > p, .more
+  display inline
+
+.more
+  color inherit
+
+// ARCHIVE STYLES
+
+.archive
+  margin 0 auto
+  padding-bottom ($s5 rem)
+
+.year
+  text-align center  
+
+.archive ul
+  padding 0
+  list-style-type none
+
+.archive ul li
+  clear:left
+  border-bottom dotted 1px $blackish
+  height ($s2 - $sn3 rem)
+  position relative
+  line-height ($s2 rem)
+  margin-bottom ($s0 rem)
+
+.archive-date, .archive-post-title
+  background $whiteish
+  // background white
+  float left
+  position absolute
+
+.archive-post-title
+  max-width 75%
+  display inline-block
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+  padding-right ($sn3 rem)
+
+.archive-date
+  right 0
+  padding-left ($sn3 rem)
+
+// MEDIA QUERIES
+
+@media only screen and (max-width: 767px)
+  html
+    font-size font-size-small
+
+  .container
+    max-width $container-width-small
+    width 100%
+    padding 0 ($s2 em)

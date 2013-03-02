@@ -1,0 +1,12 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Paperback",
+    "owner": "Paperback Theme",
+    "description": "Wintersmith theme inspired by the typography of printed novels.",
+    "index_articles": 6
+  },
+  "plugins": [
+    "./node_modules/wintersmith-stylus/"
+  ]
+}

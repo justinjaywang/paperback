@@ -1,0 +1,21 @@
+mixin author(authorName)
+  - var author = contents.authors[authorName + '.json']
+  p.author
+    span.by 
+    if author
+      a(href='mailto:'+author.metadata.email)= author.metadata.name
+    else
+      =authorName
+
+mixin date(longDate)
+  - var i = longDate.getMonth()
+  - var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septmber', 'October', 'November', 'December']
+  - var month = months[i]
+  - var date = longDate.toUTCString()
+  - var prettyDate = parseInt(date.substr(5, 2)) + ' ' + month + ' ' + date.substr(12,4)
+  p.date= prettyDate
+
+mixin archive-date(longDate)
+  - var date = longDate.toUTCString()
+  - var prettyDate = parseInt(date.substr(5, 2)) + ' ' + date.substr(8, 3)
+  span.archive-date= prettyDate
