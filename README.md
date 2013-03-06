@@ -26,7 +26,13 @@ Paperback uses [Stylus](https://github.com/learnboost/stylus) to generate CSS. I
 
 ### Replace skeleton site with Paperback
 
-After installation of Wintersmith and its Stylus plugin are complete, run `$ wintersmith new <path>` to generate a skeleton site in the `<path>` that you specify.
+After installation of Wintersmith and its Stylus plugin are complete, run 
+
+```
+$ wintersmith new <path>
+```
+
+to generate a skeleton site in the `<path>` that you specify.
 
 Replace these skeleton directories and files with those of Paperback.
 
@@ -50,6 +56,23 @@ Use `<h2>` as the largest header, as the post title will be automatically genera
 ### Authors
 
 Add authors by creating a .json file in **contents/authors/**. The author metadata in the post Markdown file should correspond to the .json file name.
+
+## Preview and build
+
+To preview, run
+
+```
+$ wintersmith preview
+```
+
+and point your browser to `http://localhost:8080`.
+
+To build, run
+
+```
+$ wintersmith build
+```
+to generate a static site in the `build/` directory.
 
 ## Next steps
 
