@@ -3,6 +3,7 @@ title: A Slander
 author: anton
 date: 2012-08-12 12:00
 template: article.jade
+tags: tag1, tag2
 ---
 
 Serge Kapitonich Ahineev, the writing master, was marrying his daughter to the teacher of history and geography. The wedding festivities were going off most successfully. In the drawing room there was singing, playing, and dancing. Waiters hired from the club were flitting distractedly about the rooms, dressed in black swallowtails and dirty white ties. <span class="more"></span>There was a continual hubub and din of conversation. Sitting side by side on the sofa, the teacher of mathematics, the French teacher, and the junior assessor of taxes were talking hurriedly and interrupting one another as they described to the guests cases of persons being buried alive, and gave their opinions on spiritualism. None of them believed in spiritualism, but all admitted that there were many things in this world which would always be beyond the mind of man. In the next room the literature master was explaining to the visitors the cases in which a sentry has the right to fire on passers-by. The subjects, as you perceive, were alarming, but very agreeable. Persons whose social position precluded them from entering were looking in at the windows from the yard.

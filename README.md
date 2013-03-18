@@ -74,7 +74,64 @@ $ wintersmith build
 ```
 to generate a static site in the `build/` directory.
 
+## Generating JSON file of page metadata
+### Input
+
+`scan.js` takes an optional pattern argument and searches the current working directory for all matches using [Javscript glob](https://github.com/isaacs/node-glob). For example,
+
+```
+$ node scan.js 'contents/articles/**/*.md'
+```
+finds any Markdown file within any folder within `/contents/articles/` in the current working directory. The default pattern, if no additional pattern argument is specified, is set to `contents/articles/**/*.md`, as is standard for Wintersmith posts.
+
+### Output
+
+`scan.js` outputs the metadata for each pattern-matched file to `stdout` in JSON format.
+
+```
+$ node scan.js 'contents/articles/**/*.md' > pages.json
+```
+
+### Example
+For a markdown file called `example.md` in the current directory that contains
+
+```
+---
+title: Example Markdown File
+author: Justin
+date: 2013-03-17
+template: example.jade
+tags: tag1, tag2, tag3
+---
+
+Body content
+```
+
+, the command 
+
+```
+$ node scan.js 'example.md' > pages.json
+```
+
+would return a file `pages.json` that contains
+
+```
+[
+  {
+    "title": "Example Markdown File",
+    "author": "Justin",
+    "date": "2012-08-12",
+    "template": "example",
+    "tags": "tag1, tag2, tag3",
+    "path": "example.md"
+  }
+]
+```
+
+---
+
 ## Next steps
 
 - Ability to sort through tag metadata to generate a dedicated page for a particular tag.
 - Author page that makes use of the author's bio metadata.
+

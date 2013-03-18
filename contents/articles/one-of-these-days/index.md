@@ -3,6 +3,7 @@ title: One of These Days
 author: gabo
 date: 2012-01-04
 template: article.jade
+tags: tag2, tag4
 ---
 
 Monday dawned warm and rainless. Aurelio Escovar, a dentist without a degree, and a very early riser, opened his office at six. He took some false teeth, still mounted in their plaster mold, out of the glass case and put on the table a fistful of instruments which he arranged in size order, as if they were on display. He wore a collarless striped shirt, closed at the neck with a golden stud, and pants held up by suspenders He was erect and skinny, with a look that rarely corresponded to the situation, the way deaf people have of looking. <span class="more"></span>

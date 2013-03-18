@@ -3,6 +3,7 @@ title: The Fiddler
 author: herman
 date: 2012-11-11
 template: article.jade
+tags: tag2, tag3
 ---
 
 So my poem is damned, and immortal fame is not for me! I am nobody forever and ever. Intolerable fate! <span class="more"></span>
