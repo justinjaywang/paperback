@@ -110,7 +110,7 @@ Body content
 , the command 
 
 ```
-$ node scan.js 'example.md' > pages.json
+$ node scan.js 'example-files/example.md' > pages.json
 ```
 
 would return a file `pages.json` that contains
