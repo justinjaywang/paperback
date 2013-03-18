@@ -82,7 +82,7 @@ to generate a static site in the `build/` directory.
 ```
 $ node scan.js 'contents/articles/**/*.md'
 ```
-finds any Markdown file within any folder within `/contents/articles/` in the current working directory. The default pattern, if no additional pattern argument is specified, is set to `contents/articles/**/*.md`, as is standard for Wintersmith posts.
+finds any Markdown file within any folder within `contents/articles/` in the current working directory. The default pattern, if no additional pattern argument is specified, is set to `contents/articles/**/*.md`, as is standard for Wintersmith posts.
 
 ### Output
 
@@ -93,7 +93,7 @@ $ node scan.js 'contents/articles/**/*.md' > pages.json
 ```
 
 ### Example
-For a markdown file called `example.md` in the current directory that contains
+For a markdown file called `example.md` in the directory `example-files/` that contains
 
 ```
 ---
@@ -123,7 +123,7 @@ would return a file `pages.json` that contains
     "date": "2012-08-12",
     "template": "example",
     "tags": "tag1, tag2, tag3",
-    "path": "example.md"
+    "path": "example-files/example.md"
   }
 ]
 ```
