@@ -5,7 +5,8 @@
   "main": "scan.js",
   "dependencies": {
     "glob": "~3.1.21",
-    "wintersmith-stylus": "https://github.com/lvivier/wintersmith-stylus/tarball/wintersmith-2.0"
+    "wintersmith-stylus": "https://github.com/lvivier/wintersmith-stylus/tarball/wintersmith-2.0",
+    "underscore": "~1.4.4"
   },
   "devDependencies": {},
   "scripts": {
@@ -19,5 +20,3 @@
   "license": "BSD",
   "readmeFilename": "README.md"
 }
-
-

@@ -8,5 +8,8 @@
   },
   "plugins": [
     "./node_modules/wintersmith-stylus/"
-  ]
+  ],
+  "require": {
+      "_": "underscore"
+  }
 }
