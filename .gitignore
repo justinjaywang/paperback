@@ -3,3 +3,4 @@ node_modules
 contents/.DS_Store
 templates/.DS_Store
 build
+pages.json
