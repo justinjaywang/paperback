@@ -1,11 +1,12 @@
 {
   "name": "paperback",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "description": "Wintersmith theme inspired by the typography of printed novels.",
   "main": "scan.js",
   "dependencies": {
     "glob": "~3.1.21",
-    "wintersmith-stylus": "~0.1.2"
+    "wintersmith-stylus": "https://github.com/lvivier/wintersmith-stylus/tarball/wintersmith-2.0",
+    "underscore": "~1.4.4"
   },
   "devDependencies": {},
   "scripts": {
@@ -17,6 +18,5 @@
   },
   "author": "",
   "license": "BSD",
-  "readmeFilename": "README.md",
-  "gitHead": "b8bcce5d74aeefbbf597de865bc1238b4001103e"
+  "readmeFilename": "README.md"
 }
